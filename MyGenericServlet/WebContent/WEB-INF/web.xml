@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>MyGenericServlet</display-name>
+
+	<context-param>
+		<param-name>office-adr</param-name>
+		<param-value>New Delhi</param-value>
+	</context-param>
+
+	<servlet>
+		<description></description>
+		<display-name>GenericServletDemo</display-name>
+		<servlet-name>GenericServletDemo</servlet-name>
+		<servlet-class>p1.GenericServletDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericServletDemo</servlet-name>
+		<url-pattern>/GenericServletDemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>MyServlet</display-name>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>p1.MyServlet</servlet-class>
+		<init-param>
+			<param-name>TL</param-name>
+			<param-value>Ramesh</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/MyServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>MyServletTwo</display-name>
+		<servlet-name>MyServletTwo</servlet-name>
+		<servlet-class>p1.MyServletTwo</servlet-class>
+		<init-param>
+			<param-name>City</param-name>
+			<param-value>Ranchi</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServletTwo</servlet-name>
+		<url-pattern>/MyServletTwo</url-pattern>
+	</servlet-mapping>
+</web-app>
